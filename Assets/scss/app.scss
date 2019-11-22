@@ -44,11 +44,35 @@ a {
     height: 100%;
 }
 
-.app-bar {
-    position: absolute;
-}
+
 
 // only apply this style if below top app bar
 .mdc-top-app-bar {
     z-index: 7;
+}
+
+.mdc-img__fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.sg-button {
+    padding: 0%;
+    transition: 0.3s all ease-in;
+
+    &--round {
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid $mdc-theme-primary;
+        }
+
+    }
+
 }

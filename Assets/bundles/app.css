@@ -1400,6 +1400,9 @@ svg.mdc-button__icon {
   .mdc-top-app-bar--fixed-adjust {
     padding-top: 56px; } }
 
+.app-bar {
+  position: absolute; }
+
 .mdc-list {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -3236,9 +3239,24 @@ a {
   overflow: auto;
   height: 100%; }
 
-.app-bar {
-  position: absolute; }
-
 .mdc-top-app-bar {
   z-index: 7; }
+
+.mdc-img__fluid {
+  max-width: 100%;
+  height: auto; }
+
+.d-flex {
+  display: -webkit-box;
+  display: flex; }
+
+.sg-button {
+  padding: 0%;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in; }
+  .sg-button--round img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #000c4f; }
 
