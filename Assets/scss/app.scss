@@ -1,0 +1,54 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import "./mixins";
+@import "./buttons";
+@import "./navbar.scss";
+@import "./lists";
+@import "./drawers.scss";
+@import "./tooltip.scss";
+@import "./typography";
+@import "./menus";
+
+@import "@material/elevation/mdc-elevation";
+@import "@material/animation/functions";
+@import '@material/theme/mdc-theme';
+@import "@material/layout-grid/mdc-layout-grid";
+
+@import "@material/animation/variables";
+
+.my-element--animating {
+    animation: foo-keyframe 175ms $mdc-animation-standard-curve-timing-function;
+}
+
+// Note: these styles do not account for any paddings/margins that you may need.
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+}
+
+.main-content {
+    overflow: auto;
+    height: 100%;
+}
+
+.app-bar {
+    position: absolute;
+}
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+    z-index: 7;
+}

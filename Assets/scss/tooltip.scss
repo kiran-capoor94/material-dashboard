@@ -1,0 +1,12 @@
+// Material Tooltip Styles
+
+$tooltip-radius: $radius;
+$tooltip-background: $gray;
+
+.popup {
+    background-color: $tooltip-background;
+    border-radius: $tooltip-radius;
+    padding: 5%;
+    font-size: 10px;
+    color: $white;
+}

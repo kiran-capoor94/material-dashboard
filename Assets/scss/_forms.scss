@@ -1,0 +1,19 @@
+// Material Forms
+
+@import "@material/textfield/mdc-text-field";
+@import "@material/select/mdc-select";
+@import "@material/notched-outline/mdc-notched-outline";
+@import "@material/radio/mdc-radio";
+@import "@material/form-field/mdc-form-field";
+@import "@material/textfield/helper-text/mdc-text-field-helper-text";
+
+[type="file"] {
+    position: relative;
+}
+
+#file-upload-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}

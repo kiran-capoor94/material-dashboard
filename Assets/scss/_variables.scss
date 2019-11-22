@@ -1,0 +1,37 @@
+/*
+Global Variables
+*/
+$black: #000;
+$white: #fff;
+$gray: #757575;
+$primary: #000c4f;
+$secondary: #ff6600;
+$radius: 10px;
+$gray-1: #faf9f9;
+$darkgray: #616161;
+
+/*
+Material Variables
+*/
+$mdc-theme-primary: $primary;
+$mdc-theme-on-primary: $white;
+$mdc-theme-secondary: $secondary;
+$mdc-theme-on-secondary: $white;
+$mdc-theme-surface: $white;
+$mdc-theme-on-surface: $primary;
+$mdc-theme-background: $gray-1;
+$mdc-theme-on-background: $primary;
+
+$mdc-top-app-bar-row-height:65px;
+$largedesktop: 1200px;
+$desktop: 992px;
+$tablet: 768px;
+$largephone: 576px;
+$phone: 0px;
+
+// Material Responsive Breakpoints Variables
+$mdc-layout-grid-breakpoints: (largedesktop: 1200px,
+    desktop: 992px,
+    tablet: 767px,
+    largephone: 576px,
+    phone: 0px);
