@@ -1,2 +1,9 @@
 // Material Navbar Styles
 @import "@material/top-app-bar/mdc-top-app-bar";
+
+
+.app-bar {
+    position: absolute;
+    // background-color: $mdc-theme-background;
+    // color: $primary !important;
+}

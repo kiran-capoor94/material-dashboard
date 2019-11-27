@@ -1,0 +1,22 @@
+@import "@material/animation/functions";
+
+@keyframes rotate-20 {
+    from {
+        transform: rotateZ(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+        opacity: 1;
+    }
+}
+
+.rotate-20 {
+    animation: mdc-animation-enter(
+            /* $name: */
+            rotate-20,
+            /* $duration: */
+            15s,
+            infinite);
+}
