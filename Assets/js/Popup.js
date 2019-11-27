@@ -1,7 +1,15 @@
 import { MDCDialog } from '@material/dialog';
 
-// const topdialog = new MDCDialog(document.querySelector('.top-dialog'));
 
-// $(document).ready(function () {
-//     topdialog.open()
-// })
+const supportdialogEl = document.querySelector('#support-dialog')
+if (supportdialogEl) {
+    const supportdialog = new MDCDialog(supportdialogEl);
+    if (supportdialog) {
+        $('#support-btn').click(function () {
+            supportdialog.open()
+        })
+    }
+}
+
+
+

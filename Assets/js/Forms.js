@@ -10,8 +10,23 @@ import {
 } from '@material/textfield/helper-text';
 
 import { MDCFloatingLabel } from '@material/floating-label';
+import { MDCSwitch } from '@material/switch';
 
-const floatingLabel = new MDCFloatingLabel(document.querySelector('.mdc-floating-label'));
+
+var switchControlEl = document.querySelector('.mdc-switch');
+
+if (switchControlEl) {
+    const switchControl = new MDCSwitch(switchControlEl);
+}
+
+
+
+const floatingLabelEl = document.querySelector('.mdc-floating-label')
+
+if (floatingLabelEl) {
+    const floatingLabel = new MDCFloatingLabel(floatingLabelEl);
+}
+
 
 const helperText = new MDCTextFieldHelperText(document.querySelector('.mdc-text-field-helper-text'));
 

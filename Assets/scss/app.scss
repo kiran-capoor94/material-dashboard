@@ -14,6 +14,10 @@
 @import "./animations";
 @import "./forms";
 @import "./popup.scss";
+@import "./cards";
+@import "./tables.scss";
+@import "./tabs";
+@import "./chips.scss";
 
 @import "@material/elevation/mdc-elevation";
 @import "@material/animation/functions";
@@ -39,11 +43,6 @@ a {
     overflow: auto;
     position: relative;
 }
-
-.main-content {
-    height: 100%;
-}
-
 
 
 // only apply this style if below top app bar
@@ -87,9 +86,9 @@ a {
 
 .campaign-card {
     border-radius: $radius;
-    border: 1px solid $mdc-theme-primary;
     padding-left: 25px;
     padding-right: 25px;
+    border: 0.5px solid $gray;
     padding-top: 15px;
     padding-bottom: 15px;
     transition: 0.3s all ease-in;

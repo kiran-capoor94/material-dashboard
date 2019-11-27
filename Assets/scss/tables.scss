@@ -1,0 +1,7 @@
+@import "@material/data-table/mdc-data-table";
+
+.campaign-tables {
+    @include mdc-data-table-header-row-fill-color($mdc-theme-primary);
+    @include mdc-data-table-header-row-text-color($white);
+    @include mdc-checkbox-container-colors($mdc-theme-primary, $white, $white, $mdc-theme-primary, false);
+}

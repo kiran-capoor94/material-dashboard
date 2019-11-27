@@ -2,7 +2,7 @@ import {
     MDCMenu
 } from '@material/menu';
 
-import {MDCMenuSurface} from '@material/menu-surface';
+import { MDCMenuSurface } from '@material/menu-surface';
 
 const menuSurface = new MDCMenuSurface(document.querySelector('.mdc-menu-surface'));
 
@@ -79,6 +79,27 @@ if (servMenuEl) {
             })
         } else {
             servMenu.open = false;
+        }
+
+    }
+
+}
+
+var vertMenuEl = document.querySelector('#vertical-menu');
+
+if (vertMenuEl) {
+    const vertMenu = new MDCMenu(vertMenuEl);
+    vertMenu.open = false;
+
+    var vertBtn = $('#services-btn');
+
+    if (vertBtn) {
+        if (vertMenu.open != true) {
+            vertBtn.click(function () {
+                vertMenu.open = true;
+            })
+        } else {
+            vertMenu.open = false;
         }
 
     }

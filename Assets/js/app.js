@@ -7,3 +7,6 @@ import "./Popup";
 import "./Menus";
 import "./Forms";
 import "./Charts";
+import "./Tables";
+import "./Tabs";
+import "./Chips";
