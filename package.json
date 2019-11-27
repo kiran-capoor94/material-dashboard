@@ -4,6 +4,7 @@
     "description": "Simple website",
     "license": "MIT",
     "dependencies": {
+        "chart.js": "^2.9.3",
         "fibers": "^4.0.2",
         "jquery": "^3.4.1",
         "material-components-web": "^4.0.0",

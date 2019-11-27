@@ -1,3 +1,25 @@
 // Material Buttons Styles
 @import "@material/icon-button/mdc-icon-button";
 @import "@material/button/mdc-button";
+@import "@material/fab/mdc-fab";
+
+
+.mdc-fab {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+}
+
+.app-fab--absolute {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    @include mdc-fab-container-color($mdc-theme-primary);
+}
+
+@media(min-width: 1024px) {
+    .app-fab--absolute {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}

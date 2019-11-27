@@ -1,5 +1,6 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 @import "./mixins";
@@ -10,6 +11,9 @@
 @import "./tooltip.scss";
 @import "./typography";
 @import "./menus";
+@import "./animations";
+@import "./forms";
+@import "./popup.scss";
 
 @import "@material/elevation/mdc-elevation";
 @import "@material/animation/functions";
@@ -18,12 +22,7 @@
 
 @import "@material/animation/variables";
 
-.my-element--animating {
-    animation: foo-keyframe 175ms $mdc-animation-standard-curve-timing-function;
-}
-
-// Note: these styles do not account for any paddings/margins that you may need.
-
+// Note: Custom CSS lives below
 body {
     display: flex;
     height: 100vh;
@@ -31,6 +30,8 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+    outline: none;
 }
 
 .mdc-drawer-app-content {
@@ -40,7 +41,6 @@ a {
 }
 
 .main-content {
-    overflow: auto;
     height: 100%;
 }
 
@@ -75,4 +75,41 @@ a {
 
     }
 
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.campaign-card {
+    border-radius: $radius;
+    border: 1px solid $mdc-theme-primary;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.3s all ease-in;
+
+    &:hover {
+        box-shadow: 3px 3px $mdc-theme-primary;
+    }
+
+    &__footer {
+        display: flex;
+        padding: 2%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.text-green {
+    color: green;
+}
+
+.bg-orange {
+    background-color: $mdc-theme-secondary;
 }

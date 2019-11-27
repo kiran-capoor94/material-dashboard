@@ -6,3 +6,4 @@ import "./drawers";
 import "./Popup";
 import "./Menus";
 import "./Forms";
+import "./Charts";
