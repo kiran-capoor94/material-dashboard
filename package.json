@@ -33,6 +33,7 @@
     },
     "scripts": {
         "start": "webpack-dev-server",
-        "watch": "webpack -d --watch"
+        "watch": "webpack -d --watch",
+        "build": "webpack -p"
     }
 }
